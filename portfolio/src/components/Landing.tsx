@@ -6,12 +6,12 @@ import {
   Linkedin,
   Twitter,
   Code,
-  Phone,
   MapPin,
   Send,
   Database,
   Server,
   Mail,
+  Slack,
   Calendar,
   ExternalLink,
   Smartphone,
@@ -293,7 +293,7 @@ export default function AnimatedPortfolio() {
           transition={{ duration: 0.5 }}
           className="text-2xl font-bold text-white"
         >
-          Logo
+          <Slack size={24} />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -303,31 +303,31 @@ export default function AnimatedPortfolio() {
         >
           <a
             onClick={() => setCurrentPage("home")}
-            className="cursor-pointer hover:text-white transition-colors"
+            className="cursor-pointer hover:text-blue-400 transition-colors"
           >
             Home
           </a>
           <a
             onClick={() => setCurrentPage("projects")}
-            className="cursor-pointer hover:text-white transition-colors"
+            className="cursor-pointer hover:text-blue-400 transition-colors"
           >
             Project
           </a>
           <a
             onClick={() => setCurrentPage("about")}
-            className="cursor-pointer hover:text-white transition-colors"
+            className="cursor-pointer hover:text-blue-400 transition-colors"
           >
             About
           </a>
           <a
             onClick={() => setCurrentPage("achievements")}
-            className="cursor-pointer hover:text-white transition-colors"
+            className="cursor-pointer hover:text-blue-400 transition-colors"
           >
             Achievements
           </a>
           <a
             onClick={() => setCurrentPage("contact")}
-            className="cursor-pointer hover:text-white transition-colors"
+            className="cursor-pointer hover:text-blue-400 transition-colors"
           >
             Contact
           </a>
@@ -466,9 +466,8 @@ export default function AnimatedPortfolio() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="md:w-1/3"
                 >
-                  <video
-                    // src={require("./Portfolio.mp4")}
-                    controls
+                  <img
+                    src="#"
                     className="rounded-lg shadow-lg w-full max-w-sm mx-auto"
                   />
                 </motion.div>
